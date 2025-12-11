@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MainScreenContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Заголовок -->
+        <TextView
+            style="@style/ScreenTitle"
+            android:text="Создать запись"/>
+
+        <!-- Выбор услуги -->
+        <TextView
+            style="@style/FormLabel"
+            android:text="Выберите услугу"/>
+
+        <Spinner
+            android:id="@+id/serviceSpinner"
+            style="@style/FormSpinner"/>
+
+        <!-- Выбор врача -->
+        <TextView
+            style="@style/FormLabel"
+            android:text="Выберите врача"/>
+
+        <Spinner
+            android:id="@+id/doctorSpinner"
+            style="@style/FormSpinner"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Дата -->
+        <TextView
+            android:id="@+id/dateTextView"
+            style="@style/FormTextInput"
+            android:text="Выберите дату"
+            android:layout_marginBottom="12dp"/>
+
+        <!-- Время -->
+        <TextView
+            android:id="@+id/timeTextView"
+            style="@style/FormTextInput"
+            android:text="Выберите время" />
+
+        <!-- Записаться -->
+        <Button
+            android:id="@+id/submitButton"
+            style="@style/PrimaryButton"
+            android:text="Записаться"/>
+
+        <!-- Назад -->
+        <TextView
+            android:id="@+id/backTextView"
+            style="@style/BackTextStyle"
+            android:text="Назад"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MainScreenContainer"
+    android:orientation="vertical">
+
+    <!-- Заголовок -->
+    <TextView
+        style="@style/ScreenTitle"
+        android:text="Здравствуйте, Администратор!"
+        android:gravity="center"/>
+
+    <Button
+        android:id="@+id/madePromotion"
+        style="@style/PrimaryButton"
+        android:text="Управление акциями" />
+
+    <!-- Разделитель -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="14dp"/>
+
+    <Button
+        android:id="@+id/logoutButton"
+        style="@style/PrimaryButton"
+        android:text="Выйти из аккаунта"/>
+</LinearLayout>

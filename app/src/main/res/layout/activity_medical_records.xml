@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MainScreenContainer"
+    android:orientation="vertical">
+
+    <!-- Заголовок -->
+    <TextView
+        style="@style/ScreenTitle"
+        android:text="Медицинская карта"/>
+
+    <!-- Список записей -->
+    <ListView
+        android:id="@+id/recordsListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+    <!-- Назад -->
+    <TextView
+        android:id="@+id/backTextView"
+        style="@style/BackTextStyle"
+        android:text="Назад"/>
+</LinearLayout>

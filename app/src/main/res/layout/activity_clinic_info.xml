@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MainScreenContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Заголовок -->
+        <TextView
+            style="@style/ScreenTitle"
+            android:text="О клинике" />
+
+        <!-- Карточка: описание клиники -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp"
+            android:clipToPadding="false"
+            android:clipChildren="false">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DentalApp Clinic — современная стоматологическая клиника, предоставляющая полный спектр услуг: профилактика, терапия, ортодонтия, имплантация и эстетическая стоматология."
+                android:textSize="16sp"
+                android:textColor="#000000"/>
+        </LinearLayout>
+
+        <!-- Карточка: адрес -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📍 Адрес:"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="г. Москва, ул. Улыбок, д. 15"
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Карточка: телефон -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="📞 Телефон:"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+7 (999) 123-45-67"
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Карточка: время работы -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="#FFFFFF"
+            android:elevation="4dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="🕒 Время работы:"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Пн–Пт: 9:00–20:00\nСб: 10:00–18:00\nВс: выходной"
+                android:textSize="16sp"
+                android:paddingTop="4dp"/>
+        </LinearLayout>
+
+        <!-- Назад -->
+        <TextView
+            android:id="@+id/backTextView"
+            style="@style/BackTextStyle"
+            android:text="Назад"/>
+    </LinearLayout>
+</ScrollView>

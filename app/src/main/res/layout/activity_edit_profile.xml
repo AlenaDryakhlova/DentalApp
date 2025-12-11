@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/MainScreenContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Заголовок -->
+        <TextView
+            style="@style/ScreenTitle"
+            android:text="Редактирование профиля"/>
+
+        <!-- Фамилия -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="Фамилия">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lastNameEditText"
+                style="@style/FormTextInput"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Имя -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="Имя">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firstNameEditText"
+                style="@style/FormTextInput"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Отчество -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="Отчество (необязательно)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/middleNameEditText"
+                style="@style/FormTextInput"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Дата рождения -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="Дата рождения">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/birthDateEditText"
+                style="@style/FormTextInput"
+                android:focusable="false"
+                android:clickable="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Телефон -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="Телефон">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneEditText"
+                style="@style/FormTextInput"
+                android:inputType="phone"
+                android:maxLength="12"
+                android:text="+7"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Пароль -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="Пароль"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText"
+                style="@style/FormTextInput"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Сохранить -->
+        <Button
+            android:id="@+id/saveButton"
+            style="@style/PrimaryButton"
+            android:text="Сохранить изменения"/>
+
+        <!-- Удаление аккаунта -->
+        <TextView
+            android:id="@+id/deleteAccountButton"
+            style="@style/LinkText"
+            android:text="Удалить аккаунт?"/>
+
+        <!-- Разделитель -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="14dp"/>
+
+        <!-- Назад -->
+        <TextView
+            android:id="@+id/backTextView"
+            style="@style/BackTextStyle"
+            android:text="Назад"/>
+    </LinearLayout>
+</ScrollView>

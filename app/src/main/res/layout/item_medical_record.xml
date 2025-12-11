@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/InfoCard"
+    android:orientation="vertical">
+
+    <!-- Дата -->
+    <TextView
+        android:id="@+id/dateTextView"
+        style="@style/BodyTextCardBold"
+        android:text="Дата: 2025-11-08"
+        android:paddingBottom="4dp"/>
+
+    <!-- Диагноз -->
+    <TextView
+        android:id="@+id/diagnosisTextView"
+        style="@style/BodyText"
+        android:text="Диагноз: Кариес"
+        android:paddingBottom="2dp"/>
+
+    <!-- Лечение -->
+    <TextView
+        android:id="@+id/treatmentTextView"
+        style="@style/BodyText"
+        android:text="Лечение: Пломба"
+        android:paddingBottom="2dp"/>
+
+    <!-- Рекомендации -->
+    <TextView
+        android:id="@+id/recommendationsTextView"
+        style="@style/BodyText"
+        android:text="Рекомендации: Чистка зубов раз в 6 месяцев"/>
+</LinearLayout>

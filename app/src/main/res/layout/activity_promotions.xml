@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MainScreenContainer"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/ScreenTitle"
+        android:text="Актуальные акции"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPromotions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/backTextView"
+        style="@style/BackTextStyle"
+        android:text="Назад"/>
+</LinearLayout>

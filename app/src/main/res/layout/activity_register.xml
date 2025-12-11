@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:padding="24dp"
+    android:background="#F8F8F8">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Заголовок -->
+        <TextView
+            style="@style/ScreenTitle"
+            android:text="Регистрация в DentalApp"/>
+
+        <!-- Фамилия -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="Фамилия">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lastNameEditText"
+                style="@style/FormTextInput"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Имя -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="Имя">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/firstNameEditText"
+                style="@style/FormTextInput"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Отчество -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="Отчество (необязательно)">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/middleNameEditText"
+                style="@style/FormTextInput"
+                android:inputType="textPersonName"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Дата рождения -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="Дата рождения">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/birthDateEditText"
+                style="@style/FormTextInput"
+                android:focusable="false"
+                android:clickable="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Email -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="Email">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/emailEditText"
+                style="@style/FormTextInput"
+                android:inputType="textEmailAddress"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Телефон -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="Телефон">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phoneEditText"
+                style="@style/FormTextInput"
+                android:inputType="phone"
+                android:maxLength="12"
+                android:text="+7"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Пароль -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="Пароль"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText"
+                style="@style/FormTextInput"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Подтверждение пароля -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="Подтвердите пароль"
+            app:passwordToggleEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirmPasswordEditText"
+                style="@style/FormTextInput"
+                android:inputType="textPassword"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Регистрация -->
+        <Button
+            android:id="@+id/registerButton"
+            style="@style/PrimaryButton"
+            android:text="Зарегистрироваться"/>
+
+        <!-- Вход -->
+        <TextView
+            android:id="@+id/loginPromptTextView"
+            style="@style/LinkText"
+            android:text="Уже есть аккаунт? Войти"/>
+    </LinearLayout>
+</ScrollView>

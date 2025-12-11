@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MainScreenContainer">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <TextView
+            style="@style/ScreenTitle"
+            android:text="Редактирование акции" />
+
+        <!-- Название -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="Название">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/titleInput"
+                style="@style/FormTextInput"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Описание -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="Описание">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/descriptionInput"
+                style="@style/FormTextInput"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- URL изображения -->
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/FormInputLayout"
+            android:hint="URL изображения">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/imageInput"
+                style="@style/FormTextInput"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Сохранить -->
+        <Button
+            android:id="@+id/btnSave"
+            style="@style/PrimaryButton"
+            android:text="Сохранить" />
+
+        <!-- Назад -->
+        <TextView
+            android:id="@+id/backTextView"
+            style="@style/BackTextStyle"
+            android:text="Назад"/>
+
+    </LinearLayout>
+</ScrollView>

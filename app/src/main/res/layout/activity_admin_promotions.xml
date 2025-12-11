@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MainScreenContainer"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Заголовок -->
+    <TextView
+        style="@style/ScreenTitle"
+        android:text="Управление акциями"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- Карточка "Добавить акцию" -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_bg"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            style="@style/BodyTextCardBold"
+            android:text="Добавить новую акцию"
+            android:gravity="center"
+            android:layout_marginBottom="1dp"/>
+
+        <Button
+            android:id="@+id/btnAddPromotion"
+            style="@style/PrimaryButton"
+            android:text="Добавить" />
+    </LinearLayout>
+
+    <!-- Заголовок блока -->
+    <TextView
+        style="@style/BodyTextCardBold"
+        android:text="Актуальные акции"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"/>
+
+    <!-- Recycler -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerPromotions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Назад -->
+    <TextView
+        android:id="@+id/backTextView"
+        style="@style/BackTextStyle"
+        android:text="Назад"/>
+</LinearLayout>

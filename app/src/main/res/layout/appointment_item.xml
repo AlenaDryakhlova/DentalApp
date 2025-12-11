@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/InfoCard"
+    android:orientation="vertical">
+
+    <!-- Дата, время, врач, услуга -->
+    <TextView
+        android:id="@+id/appointmentInfoText"
+        style="@style/BodyText"
+        android:text="Дата — Время — Врач — Услуга"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"/>
+
+    <!-- Кнопки управления -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_marginTop="4dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/rescheduleButton"
+            style="@style/CardButton"
+            android:text="Перенести"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"/>
+
+        <Button
+            android:id="@+id/cancelButton"
+            style="@style/CardButtonDanger"
+            android:text="Отменить"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+</LinearLayout>

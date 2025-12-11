@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Заголовок экрана -->
+    <style name="ScreenTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <!-- Подписи к полям -->
+    <style name="FormLabel">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+    <style name="FormLabelBold" parent="FormLabel">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Основной текст -->
+    <style name="BodyText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="BodyTextCardBold" parent="BodyText">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- Карточки (информация, данные, записи) -->
+    <style name="InfoCard">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">16dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <!-- Кнопки общие -->
+    <style name="PrimaryButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:backgroundTint">#6200EE</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <!-- Кнопки только для главного экрана -->
+    <style name="HomePrimaryButton">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">#6200EE</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+    </style>
+
+    <!-- Контейнер экрана -->
+    <style name="MainScreenContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">24dp</item>
+        <item name="android:background">#F8F8F8</item>
+    </style>
+
+    <!-- Текст "Назад" и похожие ссылки -->
+    <style name="BackTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/purple</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">12dp</item>
+    </style>
+
+    <!-- Ссылки: "Забыли пароль?", "Регистрация" -->
+    <style name="LinkText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#6200EE</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">12dp</item>
+    </style>
+
+    <!-- TextInputLayout -->
+    <style name="FormInputLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <!-- TextInputEditText -->
+    <style name="FormTextInput">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">12dp</item>
+        <item name="android:background">@drawable/edittext_background</item>
+    </style>
+
+    <!-- Spinner -->
+    <style name="FormSpinner">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+    <!-- Кнопка внутри карточки -->
+    <style name="CardButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:backgroundTint">#6200EE</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:paddingVertical">8dp</item>
+    </style>
+
+    <style name="CardButtonDanger" parent="CardButton">
+        <item name="android:backgroundTint">@color/red</item>
+    </style>
+</resources>
